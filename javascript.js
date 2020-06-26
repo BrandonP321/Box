@@ -1,12 +1,12 @@
-var x = 150
-var count = 0
+var x = 150;
+var count = 0;
 function growFunction() {
-    x += 50
-    var height = `${x}px`
-    count += 1
-    document.getElementById('growButton').innerHTML = `Grow (${count})`
+    x += 50;
+    var height = `${x}px`;
+    count += 1;
+    document.getElementById('growButton').innerHTML = `Grow (${count})`;
     document.getElementById('box').style.height = height;
-    document.getElementById('growCount').innerHTML = count
+    document.getElementById('growCount').innerHTML = count;
 }
 
 function changeColor() {
@@ -19,15 +19,15 @@ function makeOpaque() {
 
 function reset() {
     document.getElementById('box').style.height = '150px';
-    document.getElementById('box').style.backgroundColor = 'orange'
-    document.getElementById('box').style.opacity = '100%'
-    x = 150
-    count = 0
-    document.getElementById('growButton').innerHTML = 'Grow'
+    document.getElementById('box').style.backgroundColor = 'orange';
+    document.getElementById('box').style.opacity = '100%';
+    x = 150;
+    count = 0;
+    document.getElementById('growButton').innerHTML = 'Grow';
 }
 
 function newColor() {
-    document.getElementById('box').style.backgroundColor = document.getElementById('colorInput').value
+    document.getElementById('box').style.backgroundColor = document.getElementById('colorInput').value;
 }
 
 var input = document.getElementById('colorInput');
@@ -38,7 +38,7 @@ input.addEventListener('keyup', function(event) {
     }
 });
 
-function testColor() {
-    var colorChange = document.getElementById('colorInput').value
+function newColor() {
+    var colorChange = document.getElementById('colorInput').value;
     document.getElementById("box").style.backgroundColor = colorChange;
 }
