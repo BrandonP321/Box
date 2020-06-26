@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Jiggle Into JavaScript</title>
+        <!-- <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script> -->
+    
+    </head>
+    <body>
+
+        <p>Press the buttons to change the box!</p>
+        <p><strong>FYI you can now press the 'grow' button more than once</strong></p>
+
+        <label id='newColor' for='colorInput'>Change Color:</label>
+        <input type='color' id='colorInput' onchange='newColor()'>
+
+        <div id="box" style="height:150px; width:150px; background-color:orange; margin:25px"></div>
+
+        <button onclick='growFunction()' id='growFunction'>Grow</button>
+        <button onclick='changeColor()'>Blue</button>
+        <button onclick='makeOpaque()'>Fade</button>
+        <button onclick='reset()'>Reset</button>
+
+        <script type='text/javascript' src="javascript.js"></script>
+
+    </body>
+</html>
