@@ -11,6 +11,7 @@ function growFunction() {
 
 function changeColor() {
     document.getElementById('box').style.backgroundColor = 'blue';
+    document.getElementById('colorInput').value = '#0000FF'
 }
 
 function makeOpaque() {
@@ -24,10 +25,7 @@ function reset() {
     x = 150;
     count = 0;
     document.getElementById('growButton').innerHTML = 'Grow';
-}
-
-function newColor() {
-    document.getElementById('box').style.backgroundColor = document.getElementById('colorInput').value;
+    document.getElementById('colorInput').value = '#FFA500'
 }
 
 var input = document.getElementById('colorInput');
